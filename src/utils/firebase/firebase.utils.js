@@ -1,4 +1,3 @@
-import { initializeApp } from "firebase/app";
 import {
     getAuth,
     signInWithRedirect,
@@ -20,16 +19,26 @@ import {
     getDocs,
 } from "firebase/firestore";
 
+import { initializeApp } from "firebase/app";
+
+// TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAL0g7nZ9zVf7T8tAyNhwdi5mbpB8xG0ds",
+
     authDomain: "flight23-db-39954.firebaseapp.com",
+
     projectId: "flight23-db-39954",
+
     storageBucket: "flight23-db-39954.appspot.com",
+
     messagingSenderId: "527318211797",
-    appId: "1:527318211797:web:10e598bfd141a878d7165c",
+
+    appId: "1:527318211797:web:e8a39e9647129ccdd7165c",
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+// Initialize Firebase
+
+initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
